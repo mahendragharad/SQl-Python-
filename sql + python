@@ -1,0 +1,103 @@
+Start your code from here 
+(Connecting database)
+
+import mysql.connector
+# import mysql.connector
+#create user 'user'@'%' identified by 'password'
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="abc",
+  password="password"
+)
+
+cur = mydb.cursor()
+
+-------------------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________________________
+
+import mysql.connector
+# import mysql.connector
+#create user 'user'@'%' identified by 'password'
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="abc",
+  password="password"
+)
+
+cur = mydb.cursor()
+# It is a pointer used to insert or handle database 
+
+cur.execute("create database My_db")
+# Creating database
+
+cur.execute("use first_db")
+# using database 
+
+cur.execute("create table details ( name varchar(98) , phone_no int , job_roll char(20) )")
+# creating table using python 
+
+cur.execute("insert into details values ('mahendra', 909090909 , 'datascientist')")
+# Inserting values in the table 
+
+mydb.commit()
+# it is used to commit changes
+-------------------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________________________
+
+import mysql.connector
+# import mysql.connector
+#create user 'user'@'%' identified by 'password'
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="abc",
+  password="password"
+)
+
+cur = mydb.cursor()
+cur.execute("select * from first_db.details")
+
+for i in cur :
+    print(i)
+    
+# This code is used to list down all the values from the table.
+______________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________
+
+Theory Part :
+SQL :
+
+SQL is the type of the databases inside the type of SQL databases there are many winders whicgh are provide us functionallity to work on data that is Mysql ,Oracle , DB2 , MsSQL
+
+Mysql ,Oracle , DB2 , MsSQL :- This are the winders which rfae help us to save data in taboluer format
+
+Disadanatges :
+
+In SQL you can store the data in only tabouler format , (not like images , pic , videos )
+
+You have to create the table scheme before storing the data.
+
+NOSQL (Not only SQL) :
+
+Inside the NOSQL data is stored in taboluer format.
+
+Inside the SQL we will able to store the data in documented format.(images (by concerting images in bit 64 format).
+
+Advantages of NOSQL :
+
+NOSQl provide the following advantages.
+
+Graph
+Time stamp
+Fast search
+The databases which are find inside the NOSQL databases .
+Habase
+
+MongoDB
+
+Casandra
+
+ImplasCV
+
+Google Bit Query Table
+
+Neu4j For Graph
